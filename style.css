@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+}
+
+.page {
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 43rem;
+  width: 62rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.top {
+  height: 20rem;
+  background-color: #fff;
+  padding: 5rem;
+}
+
+.top h1 {
+  font-size: 2rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2rem;
+}
+
+.top h2 {
+  font-size: 1.5rem;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.4rem;
+}
+
+.top p {
+  width: 50rem;
+  font-size: 1.5rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.bottom {
+  height: 23rem;
+  display: flex;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.bottom-left {
+  width: 50%;
+  padding: 5rem;
+}
+
+.bottom-left h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+.bottom-left h2 {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: hsla(203, 44%, 93%, 0.57);
+  margin-left: 1.2rem;
+}
+
+.bottom-left p {
+  font-size: 1.5rem;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.8rem;
+}
+
+.bottom-left button {
+  width: 21rem;
+  height: 4.3rem;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-right {
+  width: 50%;
+  background-color: hsl(179, 47%, 52%);
+  padding: 5rem;
+}
+
+.bottom-right h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+.bottom-right p {
+  font-size: 1.35rem;
+  width: 18rem;
+  line-height: 2rem;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 32rem;
+    height: auto;
+  }
+
+  .top {
+    height: 28rem;
+    padding: 2rem;
+  }
+
+  .top p {
+    width: auto;
+    line-height: 3rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bottom-left {
+    width: 100%;
+    height: 23rem;
+    padding: 2rem;
+  }
+
+  .bottom-left h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bottom-left h2 {
+    margin-bottom: 1.8rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .bottom-left p {
+    margin-bottom: 3rem;
+  }
+
+  .bottom-right {
+    width: 100%;
+    height: 23rem;
+    padding: 2rem;
+  }
+
+  .bottom-right h1 {
+    font-size: 1.8rem;
+  }
+
+  .bottom-right p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
